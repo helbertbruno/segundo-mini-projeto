@@ -1,0 +1,50 @@
+/* Estilos gerais */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    transition: background-color 0.5s;
+}
+
+/* Container centralizado */
+.container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 400px;
+}
+
+/* Botões */
+.botoes button {
+    margin: 10px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 15px;
+    transition: 0.3s;
+}
+
+.botoes button:hover { /*efeito ao passar o mouse sobre os botes*/
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+#btnCor { background-color: #3498db; color: white; }
+#btnTexto { background-color: #2ecc71; color: white; }
+#btnHora { background-color: #e67e22; color: white; }
+
+/* Responsividade simples para celular */
+@media (max-width: 500px) {
+    .botoes button {
+        width: 100%;
+    }
+}
